@@ -1,0 +1,90 @@
+#mail
+    nav
+        ul
+            li
+                width: 8em
+                padding: 4px 1em
+                    
+    main
+        div
+            form
+                display: flex
+                flex-direction: column
+                width: 75vw
+                height: 100%
+                margin-left: 1em
+
+            input
+                width: 75vw
+                margin-bottom: 1em
+                border: 1px solid #ACACAC
+                border-radius: 5px
+                padding: 1em
+
+            textarea
+                width: 75vw
+                height: 10em
+                margin-bottom: 1em
+                border: 1px solid #ACACAC
+                border-radius: 5px
+                resize: none
+                padding: 1em
+
+            input[type=submit]
+                width: 75vw
+                margin-bottom: 1em
+                border: 1px solid #ACACAC
+                border-radius: 5px
+                background-color: #ACACAC
+                color: #eaeaea
+                padding: 1em
+
+            input[type=submit]:hover
+                background-color: #eaeaea
+                color: #ACACAC
+
+            label
+                margin-bottom: 1em
+
+            padding: 1em
+
+    display: none
+    flex-direction: column
+
+// format tablette
+@media screen and (max-width: 1024px)
+    #mail 
+        main 
+            div 
+                form
+                    width: 50vw
+
+                input
+                    width: 50vw
+
+                textarea
+                    width: 50vw
+
+                input[type="submit"]
+                    width: 50vw
+
+// format smartphone
+@media screen and (max-width: 600px)
+    #mail
+        nav
+            display: none
+        hr
+            display: none
+        main 
+            div 
+                form
+                    width: 80vw
+
+                input
+                    width: 80vw
+
+                textarea
+                    width: 80vw
+
+                input[type="submit"]
+                    width: 80vw

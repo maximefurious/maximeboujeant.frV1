@@ -1,0 +1,54 @@
+#exp
+    nav
+        ul
+            li
+                width: 8em
+                padding: 4px 1em
+
+            align-items: center
+        
+    .exp-container
+        .exp-img
+            div
+                img
+                    width: 35vw
+
+                display: flex
+                flex-direction: column
+                align-items: center
+                padding: 1em
+
+            display: flex
+            padding: 2em
+
+        padding: 1em
+    display: none
+    flex-direction: column
+
+// format tablette
+@media screen and (max-width: 1024px)
+    .exp-img
+        flex-wrap: wrap
+
+// format smartphone
+@media screen and (max-width: 600px)
+    #exp
+        nav
+            display: none
+        hr
+            display: none
+        .exp-container
+            .exp-img
+                div
+                    img
+                        width: 60vw
+                flex-direction: column
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-content: center
+
+
+
+
+

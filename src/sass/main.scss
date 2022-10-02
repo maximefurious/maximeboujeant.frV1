@@ -1,0 +1,147 @@
+@import '_cv.sass',
+'_projet.sass',
+'_contact.sass',
+'_skill.sass',
+'_experience.sass',
+'_profil.sass',
+'_page.sass',
+'_preloader.sass',
+'_formation.sass',
+'_bureau.sass',
+'_reset.sass',
+'_settings';
+
+/* General */
+
+@font-face {
+    font-family: "roboto";
+    src: url("../font/Roboto/Roboto-Light.ttf");
+}
+
+// * {
+//     border: 1px solid red;
+// }
+body {
+    font-family: "roboto", arial, sans-serif;
+    font-size: 18px;
+    /* Stop the user from selecting an item */
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: url("../image/bureau/fond.jpg") center fixed no-repeat;
+    background-size: cover;
+}
+
+footer {
+    padding: 0 1em;
+    color: #eaeaea;
+    text-align: center;
+    font-size: 0.8em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.27782450870973385) 0%, rgba(0, 0, 0, 0.09855280002626055) 40%);
+}
+
+.img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+img {
+    width: 70px;
+}
+
+nav {
+    ul {
+        padding: 0;
+    }
+    li {
+        list-style: none;
+        padding: 1em;
+        display: flex;
+        align-items: center;
+        &:hover {
+            background-color: gray;
+            cursor: pointer;
+        }
+    }
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em 0 1em;
+}
+
+.dark {
+    .corps {
+        background-color: #595959;
+        color: #eaeaea;
+    }
+    header {
+        background-color: #595959;
+        color: #eaeaea;
+    }
+    a {
+        color: #eaeaea;
+    }
+    .sign {
+        color: #c22866;
+    }
+    .balise {
+        color: #ff3988;
+    }
+    .texte {
+        color: #eaeaea;
+    }
+    .class {
+        color: #c08af0;
+    }
+    .inner-class {
+        color: #aaff70;
+    }
+}
+
+.light {
+    .corps {
+        background-color: #eaeaea;
+        color: black;
+    }
+    header {
+        background-color: #eaeaea;
+        color: black;
+    }
+    a {
+        color: black;
+    }
+    .texte a {
+        color: #767676;
+    }
+}
+
+// format tablette
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+// format smartphone
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 14px;
+    }
+    .dark {
+        #moi {
+            nav {
+                ul {
+                    li {
+                        background-color: #818181;
+                    }
+                }
+            }
+        }
+    }
+}
